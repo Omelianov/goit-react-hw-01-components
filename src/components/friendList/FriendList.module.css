@@ -61,48 +61,51 @@ input {
   margin: 0;
 }
 
-.statistics {
+.friendList {
   margin: auto;
-  background-color: #bfd7d9be;
-  border-radius: 5px;
-  max-width: 350px;
+  max-width: 220px;
   max-height: auto;
-  border: solid #5e5d5d23 1px;
   margin-bottom: 50px;
-}
 
-.title {
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 24px;
-  color: #5f5f5f;
-  margin: 30px;
-}
-
-.statList {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
+  gap: 10px;
 }
 
 .item {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  flex-direction: column;
-  flex-basis: 20%;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  background-color: #e2f3f4be;
+  gap: 10px;
+  margin-bottom: 10px;
+  border: solid rgba(0, 0, 0, 0.097) 1px;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.398);
 }
 
-.label {
-  font-size: 15px;
-  color: #edeaea;
+.online {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #038603;
+  margin-left: 10px;
 }
 
-.percentage {
-  font-size: 15px;
-  font-weight: 600;
-  color: #edeaea;
+.offline {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #6a0000;
+  margin-left: 10px;
+}
+
+.avatar {
+  /* width: 100%; */
+  height: auto;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
