@@ -4,6 +4,9 @@ import css from './Profile.module.css'
 
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
+    const formatedStatsFolowers = stats.followers.toLocaleString('en-US');
+    const formatedStatsViews = stats.views.toLocaleString('en-US');
+    const formatedStatsLikes = stats.likes.toLocaleString('en-US');
     return <div className={css.profile}>
         <div className={css.description}>
             <div className={css.avatarCircle}>
@@ -23,15 +26,15 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <ul className={css.stats}>
             <li className={css.statsItem}>
                 <span className={css.label}>Followers</span>
-                <span className={css.quantity}>{stats.followers}</span>
+                <span className={css.quantity}>{formatedStatsFolowers}</span>
             </li>
             <li className={css.statsItem}>
                 <span className={css.label}>Views</span>
-                <span className={css.quantity}>{stats.views}</span>
+                <span className={css.quantity}>{formatedStatsViews}</span>
             </li>
             <li className={css.statsItem}>
                 <span className={css.label}>Likes</span>
-                <span className={css.quantity}>{stats.likes}</span>
+                <span className={css.quantity}>{formatedStatsLikes}</span>
             </li>
         </ul>
     </div>

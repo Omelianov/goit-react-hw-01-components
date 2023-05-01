@@ -65,7 +65,7 @@ input {
   margin: auto;
   background-color: #baf2f6be;
   border-radius: 5px;
-  max-width: 400px;
+  max-width: 350px;
   max-height: auto;
   border: solid #5e5d5d23 1px;
 }
@@ -113,7 +113,7 @@ input {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  background-color: #cbcaca90;
+  background-color: #bdcccc87;
 }
 
 .statsItem {
