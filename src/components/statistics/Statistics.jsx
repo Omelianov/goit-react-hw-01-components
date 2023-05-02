@@ -7,7 +7,6 @@ function getRandomColor() {
 }
 
 
-
 export const Statistics = ({stats, title}) => {
     return (
         <section className={css.statistics}>
@@ -20,7 +19,7 @@ export const Statistics = ({stats, title}) => {
                     <span className={css.percentage}>{percentage}%</span>
                 </li>))}
             </ul>
-            
+
         </section>);
   };
 
