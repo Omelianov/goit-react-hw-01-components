@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import css from './Profile.module.css'
 
 
-export const Profile = ({ username, tag, location, avatar, stats }) => {
-    const formatedStatsFolowers = stats.followers.toLocaleString('en-US');
-    const formatedStatsViews = stats.views.toLocaleString('en-US');
-    const formatedStatsLikes = stats.likes.toLocaleString('en-US');
+export const Profile = ({ username, tag, location, avatar, stats:{followers, views, likes} }) => {
+    const formatedStatsFolowers = followers.toLocaleString('en-US');
+    const formatedStatsViews = views.toLocaleString('en-US');
+    const formatedStatsLikes = likes.toLocaleString('en-US');
     return <div className={css.profile}>
         <div className={css.description}>
             <div className={css.avatarCircle}>
@@ -50,5 +50,5 @@ Profile.propTypes = {
         followers: PropTypes.number.isRequired,
         views: PropTypes.number.isRequired,
         likes: PropTypes.number.isRequired,
-    }),
+    }).isRequired,
 };
